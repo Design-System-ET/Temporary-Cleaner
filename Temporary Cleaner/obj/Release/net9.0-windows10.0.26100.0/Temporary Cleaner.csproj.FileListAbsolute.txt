@@ -1,0 +1,21 @@
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\bin\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.exe
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\bin\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.deps.json
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\bin\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.runtimeconfig.json
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\bin\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.dll
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\bin\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.pdb
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\bin\Release\net9.0-windows10.0.26100.0\Microsoft.Windows.SDK.NET.dll
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\bin\Release\net9.0-windows10.0.26100.0\WinRT.Runtime.dll
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary_Cleaner.Form1.resources
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary_Cleaner.Properties.Resources.resources
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.csproj.GenerateResource.cache
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.AssemblyInfoInputs.cache
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.AssemblyInfo.cs
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.csproj.CoreCompileInputs.cache
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.sourcelink.json
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporar.3485E7C6.Up2Date
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.dll
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\refint\Temporary Cleaner.dll
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.pdb
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\Temporary Cleaner.genruntimeconfig.cache
+C:\PROYECTOS\Visual Studio\Temporary Cleaner\Temporary Cleaner\obj\Release\net9.0-windows10.0.26100.0\ref\Temporary Cleaner.dll

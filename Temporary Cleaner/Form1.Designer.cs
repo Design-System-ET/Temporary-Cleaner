@@ -109,9 +109,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(216, -17);
+            pictureBox1.Location = new Point(240, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(154, 169);
+            pictureBox1.Size = new Size(130, 140);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -119,7 +119,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(146, 311);
+            label1.Location = new Point(146, 409);
             label1.Name = "label1";
             label1.Size = new Size(80, 20);
             label1.TabIndex = 7;
@@ -128,7 +128,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(129, 333);
+            label2.Location = new Point(129, 431);
             label2.Name = "label2";
             label2.Size = new Size(126, 20);
             label2.TabIndex = 8;
@@ -136,7 +136,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(12, 363);
+            btnLimpiar.Location = new Point(12, 461);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(358, 29);
             btnLimpiar.TabIndex = 9;
@@ -167,9 +167,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(221, 158);
+            pictureBox2.Location = new Point(240, 158);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(152, 128);
+            pictureBox2.Size = new Size(133, 128);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
@@ -179,7 +179,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(382, 398);
+            ClientSize = new Size(382, 498);
             Controls.Add(pictureBox2);
             Controls.Add(button8);
             Controls.Add(button7);
@@ -196,8 +196,8 @@
             HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MaximumSize = new Size(400, 445);
-            MinimumSize = new Size(400, 445);
+            MaximumSize = new Size(400, 545);
+            MinimumSize = new Size(400, 545);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Temporary Cleaner 2";

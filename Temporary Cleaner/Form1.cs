@@ -59,40 +59,74 @@ namespace Temporary_Cleaner
             string fullPath = System.IO.Path.Combine(basePath, appDataTEMP);
             DirectoryInfo appdatatemp = new DirectoryInfo(fullPath);
 
-            //limpieza de archivos la hago por este exe externo por que en esta carpeta no funciona
-            //la doble eliminacion (carpetas y archivos)
+            // Limpiar archivos mediante un exe externo
             string rutaAlExe = @"appdataFile.exe";
             Process proceso = new Process();
             proceso.StartInfo.FileName = rutaAlExe;
 
+            // Solicitar permisos de administrador
+            proceso.StartInfo.Verb = "runas";  // Ejecuta el proceso como administrador
+            proceso.StartInfo.UseShellExecute = true;
+
             bool exito = true;
+            List<string> errores = new List<string>();  // Lista para almacenar los errores
 
             try
             {
+                // Eliminar archivos primero
+                foreach (FileInfo archivo in appdatatemp.GetFiles())
+                {
+                    try
+                    {
+                        archivo.Delete();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Añadir a la lista de errores si no se puede eliminar el archivo
+                        errores.Add($"No se pudo eliminar el archivo {archivo.FullName}: {ex.Message}");
+                    }
+                }
+
+                // Eliminar subcarpetas
                 foreach (DirectoryInfo dir in appdatatemp.GetDirectories())
                 {
-                    dir.Delete(true);
-                    proceso.Start();
-                };
+                    try
+                    {
+                        dir.Delete(true); // true para eliminar subcarpetas y archivos dentro de ellas
+                    }
+                    catch (Exception ex)
+                    {
+                        // Añadir a la lista de errores si no se puede eliminar la carpeta
+                        errores.Add($"No se pudo eliminar la carpeta {dir.FullName}: {ex.Message}");
+                    }
+                }
+
+                // Iniciar el proceso para realizar tareas adicionales
+                proceso.Start();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Temporary Cleaner no pudo eliminar algunos recursos por que otro programa abrio la carpeta o uno de sus archivos", ex.Message);
+                MessageBox.Show("Temporary Cleaner no pudo eliminar algunos recursos porque otro programa abrió la carpeta o uno de sus archivos", ex.Message);
                 exito = false;
-            };
+            }
 
-
-            if (exito)
+            // Mostrar el mensaje final
+            if (errores.Count > 0)
             {
-                // Mostrar mensaje si la eliminación de todos los archivos fue exitosa
-                MessageBox.Show("Se eliminaron todos los archivos con éxito.");
+                // Mostrar los errores al final
+                string mensajeErrores = "No se pudieron eliminar los siguientes archivos o carpetas:\n\n" + string.Join("\n", errores);
+                MessageBox.Show(mensajeErrores, "Errores en la eliminación");
             }
             else
             {
-                // Mostrar mensaje si hubo errores en la eliminación de al menos un archivo
-                MessageBox.Show("La eliminación de archivos no se completó correctamente.");
+                // Mostrar mensaje si todo fue eliminado con éxito
+                MessageBox.Show("Se eliminaron todos los archivos con éxito.");
             }
         }
+
+
+
+
 
 
         private void button3_Click(object sender, EventArgs e)
@@ -490,7 +524,7 @@ namespace Temporary_Cleaner
             // Mostrar mensaje al usuario
             MessageBox.Show("Proceso de limpieza terminado.\nSe han eliminado " + contador + " archivos.\n" + mensajes.ToString(), "Limpiador de Archivos Temporales", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-       
+
 
             //Crear las carpetas eliminadas por que el proceso de robocopy me elimina estas direcciones
             // Definir las rutas de las carpetas a crear

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Temporary Cleaner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c0948c7829f4d06eb32c49291df3337bc29de1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36058a0d8a59a7e1db9549ac16df6ad26f25cb99")]
 [assembly: System.Reflection.AssemblyProductAttribute("Temporary Cleaner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Temporary Cleaner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
